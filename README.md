@@ -1,6 +1,6 @@
 RasPiTemp
 =========
-Measure the core CPU temperature of a RaspberryPi. Tested on models 3, 3 B+, and Zero W.
+Measure the core CPU temperature of a RaspberryPi. Tested on Model 3 B+ and Zero W.
 
 Properties
 ----------
