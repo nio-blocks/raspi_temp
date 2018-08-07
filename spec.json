@@ -1,7 +1,7 @@
 {
   "nio/RasPiTemp": {
     "version": "0.1.0",
-    "description": "Measure the core CPU temperature of a RaspberryPi. Tested on models 3, 3 B+, and Zero W.",
+    "description": "Measure the core CPU temperature of a RaspberryPi. Tested on Model 3 B+ and Zero W.",
     "categories": [],
     "properties": {
       "enrich": {
