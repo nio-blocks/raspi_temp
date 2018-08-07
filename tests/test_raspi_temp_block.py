@@ -10,7 +10,7 @@ class TestRasPiTemp(NIOBlockTestCase):
     @patch(RasPiTemp.__module__ + '.subprocess')
     def test_process_signals(self, mock_subprocess):
         """Signals are enriched with CPU temperature."""
-        mock_subprocess.call.return_value = b'temp=3.14'C\n'
+        mock_subprocess.check_output.return_value = b'temp=3.14\'C\n'
         blk = RasPiTemp()
         self.configure_block(blk, {'enrich': {'exclude_existing': False}})
         blk.start()
