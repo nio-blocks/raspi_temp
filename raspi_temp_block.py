@@ -11,7 +11,9 @@ class RasPiTemp(EnrichSignals, Block):
     def process_signals(self, signals):
         outgoing_signals = []
         for signal in signals:
-            raw_temp=subprocess.check_output(['/opt/vc/bin/vcgencmd','measure_temp']).decode()
+            raw_temp=subprocess.check_output(
+                ['/opt/vc/bin/vcgencmd','measure_temp']).decode()
+            self.logger.debug(raw_temp)
             temp = float(raw_temp.split('=')[-1].split('\'')[0])
             new_signal = self.get_output_signal({'temp_C': temp}, signal)
             outgoing_signals.append(new_signal)
