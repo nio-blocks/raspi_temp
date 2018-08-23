@@ -2,6 +2,6 @@
   "nio/RasPiTemp": {
     "language": "Python",
     "url": "git://github.com/nio-blocks/raspi_temp.git",
-    "version": "0.1.0"
+    "version": "0.1.1"
   }
 }
